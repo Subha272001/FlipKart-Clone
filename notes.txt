@@ -1,0 +1,61 @@
+Tech stack ->
+   Front end = React , material UI
+
+client folder ->
+  npx create-react-app client;
+  components ->
+  1. Header -->
+       i. Logo
+       ii. SearchBar
+       ii. CustomButtons
+  2.Home -->
+      i. NavBar
+      ii. crouser(npm i react-multi-crouser)-->{
+      }
+      iii. show default data comes from database.
+  __NOW SWITCH TO SERVER SIDE__
+___ON SERVER SIDE___       
+  database --> create on cloud mongodb atlas
+    --to show default data on homepage data in (constants folder-->data.js)
+    which will be imported in 
+    (default.js--> to insert default data into database written seperately because there is no api call for it. it just to store default data)
+
+  Model -->before insering the data into database we need to validate it like do we have tthe required fields and stuffs.(for that we use models )
+   3. Login --->
+        i. Login Dialog(use dialog component of material ui);
+        ii. Signup Dialog-->
+            Enter details like (name,email, username,password)
+        {note - for that we use text field and call a same function to each field but to differentiate the differernt filelds we use (name attribute) }
+        
+        call an backend API to signup
+
+Redux --> here we used to store the states in frontend itself in a centralised repository/database which is called redux;        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_________MATERIAL UI COMPONENTS_____
+for header -> <AppBar>
+                <Toolbar>
+                </Toolbar>
+              </Appbar>
+Box (div) --> can be used as span if(Box component='span')
+
+css in object as (camelcase)
+css in styled as(lowecase,hyphenbased)
+
+Typography - by default used as p elemnt but can be used as heading elements by chnage in the attributes
+
+InputBase for (taking input)
